@@ -34,7 +34,7 @@ class IdealIssuersResponse implements JsonSerializable
         return $this->issuers;
     }
 
-    public function jsonSerialize(): array
+    public function jsonSerialize(): mixed: array
     {
         $json = [];
         foreach ($this as $key => $value) {

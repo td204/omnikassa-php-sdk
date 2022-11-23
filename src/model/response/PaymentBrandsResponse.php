@@ -49,7 +49,7 @@ class PaymentBrandsResponse implements JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $json = [];
         foreach ($this as $key => $value) {

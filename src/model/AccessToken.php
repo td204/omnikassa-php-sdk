@@ -90,7 +90,7 @@ class AccessToken implements \JsonSerializable
      *
      * @since 5.4.0
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             'token' => $this->token,
