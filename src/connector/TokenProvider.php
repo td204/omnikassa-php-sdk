@@ -33,7 +33,7 @@ abstract class TokenProvider
         $validUntil = $this->getValue(static::ACCESS_TOKEN_VALID_UNTIL);
         $durationInMillis = $this->getValue(static::ACCESS_TOKEN_DURATION);
 
-        return new AccessToken($token, new \DateTime($validUntil), $durationInMillis);
+        return new AccessToken($token, new \DateTime($validUntil ?? ''), $durationInMillis);
     }
 
     final public function setAccessToken(AccessToken $accessToken)
