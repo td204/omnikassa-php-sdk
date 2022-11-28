@@ -34,5 +34,5 @@ interface Connector
     /**
      * Retrieve the iDEAL issuers.
      */
-    public function getIDEALIssuers(): string;
+    public function getIDEALIssuers();
 }

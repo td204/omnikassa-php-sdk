@@ -45,7 +45,7 @@ class TransactionRefundableDetailsResponse
     /**
      * @return string UUID
      */
-    public function getTransactionId(): string
+    public function getTransactionId()
     {
         return $this->transactionId;
     }

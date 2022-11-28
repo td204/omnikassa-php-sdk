@@ -47,7 +47,7 @@ class InitiateRefundRequest implements \JsonSerializable
     }
 
     /** {@inheritDoc} */
-    public function jsonSerialize(): mixed
+    public function jsonSerialize()
     {
         return [
             'money' => $this->money,

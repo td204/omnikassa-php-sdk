@@ -35,7 +35,7 @@ class IdealIssuersLogo implements JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize(): mixed
+    public function jsonSerialize()
     {
         $json = [];
         foreach ($this as $key => $value) {
@@ -47,12 +47,12 @@ class IdealIssuersLogo implements JsonSerializable
         return $json;
     }
 
-    public function getUrl(): string
+    public function getUrl()
     {
         return $this->url;
     }
 
-    public function getMimeType(): string
+    public function getMimeType()
     {
         return $this->mimeType;
     }

@@ -49,7 +49,7 @@ class IdealIssuersInfo implements JsonSerializable
     /**
      * @return array
      */
-    public function jsonSerialize(): mixed
+    public function jsonSerialize()
     {
         $json = [];
         foreach ($this as $key => $value) {
@@ -61,12 +61,12 @@ class IdealIssuersInfo implements JsonSerializable
         return $json;
     }
 
-    public function getId(): string
+    public function getId()
     {
         return $this->id;
     }
 
-    public function getName(): string
+    public function getName()
     {
         return $this->name;
     }
@@ -79,7 +79,7 @@ class IdealIssuersInfo implements JsonSerializable
         return $this->logos;
     }
 
-    public function getCountryNames(): string
+    public function getCountryNames()
     {
         return $this->countryNames;
     }

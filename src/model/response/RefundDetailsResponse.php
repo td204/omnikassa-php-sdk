@@ -92,7 +92,7 @@ class RefundDetailsResponse
      *
      * @return string UUID
      */
-    public function getRefundId(): string
+    public function getRefundId()
     {
         return $this->refundId;
     }
@@ -145,7 +145,7 @@ class RefundDetailsResponse
      * - "SOFORT"
      * .
      */
-    public function getPaymentBrand(): string
+    public function getPaymentBrand()
     {
         return $this->paymentBrand;
     }
@@ -158,7 +158,7 @@ class RefundDetailsResponse
      * - "UNKNOWN"
      * .
      */
-    public function getStatus(): string
+    public function getStatus()
     {
         return $this->status;
     }
@@ -166,7 +166,7 @@ class RefundDetailsResponse
     /**
      * @return string The description as given in the refund request
      */
-    public function getDescription(): string
+    public function getDescription()
     {
         return $this->description;
     }
@@ -174,7 +174,7 @@ class RefundDetailsResponse
     /**
      * @return string UUID
      */
-    public function getTransactionId(): string
+    public function getTransactionId()
     {
         return $this->transactionId;
     }

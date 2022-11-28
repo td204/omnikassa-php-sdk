@@ -102,7 +102,7 @@ class ApiConnector implements Connector
      *
      * @return string json response body
      */
-    public function getIDEALIssuers(): string
+    public function getIDEALIssuers()
     {
         return $this->performAction(function () {
             $this->restTemplate->setToken($this->accessToken->getToken());
